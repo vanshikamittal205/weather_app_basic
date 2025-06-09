@@ -120,7 +120,11 @@ class _WeatherPageState extends State<WeatherPage> {
                     ? '${_weather!.temperature.round()}°C'
                     : 'Loading temperature...',
                 style: TextStyle(fontSize: 32),
+
               ),
+              Text('Humidity: ${_weather?.humidity ?? '--'}%'),
+
+              Text('Wind Speed: ${_weather?.windSpeed?? '--'} m/s'),
             ],
           ),
         ),
